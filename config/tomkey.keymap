@@ -35,10 +35,10 @@
 
         ARROW {
             bindings = <
-&kp GRAVE        &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0                           &trans         &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)  &kp LG(P)
-&kp TAB          &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LG(K)
-&kp LCMD         &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &kp PAGE_DOWN  &kp HOME            &kp LC(UP_ARROW)  &kp END              &kp LG(L)
-&kp LC(LA(DEL))  &trans                  &kp LEFT_SHIFT  &trans                   &trans             &trans      &trans  &kp DEL                                                                   &trans
+&kp GRAVE        &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0                           &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(P)
+&kp TAB          &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(K)
+&kp LCMD         &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &kp PAGE_DOWN  &trans          &mkp MB1        &mkp MB2         &mkp MB3
+&kp LC(LA(DEL))  &trans                  &kp LEFT_SHIFT  &trans                   &trans             &trans      &trans  &kp DEL                                                         &trans
             >;
         };
 
@@ -53,14 +53,14 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &mmv MOVE_UP        &mmv MOVE_LEFT   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN      &mmv MOVE_RIGHT  &kp F11  &kp F12  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans           &trans                            &trans
+&trans  &trans  &trans  &trans  &trans                      &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
         };
 
-        layer_6 {
+        SYMBOL {
             bindings = <
 &kp PERCENT      &kp DOLLAR  &kp AMPERSAND   &kp LCTRL        &kp SLASH                         &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN
 &kp AT_SIGN      &kp HASH    &kp ASTERISK    &kp PLUS         &kp EQUAL     &trans      &trans  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
