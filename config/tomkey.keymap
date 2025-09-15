@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 300  // デフォルト: 600
-
 #define U_MOUSE_MOVE_MAX 300  // 新しい最大速度設定（デフォルトは600）
 
 #undef MOVE_UP
@@ -58,10 +57,10 @@
 
         MOUSE {
             bindings = <
-&trans        &trans        &trans     &trans          &trans                      &trans  &trans    &trans    &trans    &trans
-&trans        &trans        &trans     &trans          &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans        &trans        &trans     &trans          &trans  &trans      &trans  &trans  &trans    &mkp MB1  &mkp MB2  &mkp MB3
-&kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                                 &trans
+&trans  &trans        &trans     &trans          &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans        &trans     &trans          &trans  &trans      &trans  &trans  &trans    &mkp MB1  &mkp MB2  &mkp MB3
+&trans  &kp LEFT_ALT  &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                                 &trans
             >;
         };
 
@@ -87,7 +86,7 @@
             bindings = <
 &kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                   &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
 &kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans      &kp PRINTSCREEN  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans      &trans           &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans      &kp LS(LG(S))    &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
 &trans                   &trans        &trans        &trans        &trans        &trans      &trans           &kp LEFT_SHIFT                                             &trans
             >;
         };
