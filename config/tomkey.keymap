@@ -16,6 +16,7 @@
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -73,10 +74,10 @@
 
         ARROW {
             bindings = <
-&kp GRAVE        &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0                           &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(P)
-&kp TAB          &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(K)
-&kp LCMD         &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &kp PAGE_DOWN  &trans          &mkp MB1        &mkp MB2         &mkp MB3
-&kp LC(LA(DEL))  &trans                  &kp LEFT_SHIFT  &trans                   &trans             &trans      &trans  &kp DEL                                                         &trans
+&kp GRAVE        &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0                               &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp LG(P)
+&kp TAB          &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans      &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(K)
+&kp LCMD         &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans      &kp PAGE_DOWN  &trans          &mkp MB1        &mkp MB2         &mkp MB3
+&kp LC(LA(DEL))  &trans                  &kp LEFT_SHIFT  &trans                   &trans             &trans      &kp INSERT  &kp DEL                                                         &trans
             >;
         };
 
@@ -100,10 +101,10 @@
 
         SYMBOL {
             bindings = <
-&kp PERCENT      &kp DOLLAR     &kp JP_AMPERSAND   &kp JP_CARET     &kp SLASH                         &kp JP_PIPE    &kp JP_LBRACE        &kp JP_RBRACE          &kp LESS_THAN     &kp GREATER_THAN
-&kp JP_AT        &kp HASH       &kp JP_ASTERISK    &kp JP_PLUS      &kp JP_EQUAL  &trans      &trans  &kp MINUS      &kp JP_LPAREN        &kp JP_RPAREN          &kp JP_RPAREN     &kp JP_COLON
-&mt EQUAL MINUS  &kp JP_TILDE   &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &trans      &trans  &kp JP_YEN     &kp JP_LBRACKET      &kp JP_RBRACKET        &kp JP_QUOTE      &kp JP_DQUOTE
-&trans           &kp LESS_THAN  &kp GREATER_THAN   &trans           &trans        &trans      &trans  &trans                                                                        &trans
+&kp PERCENT      &kp DOLLAR     &kp JP_AMPERSAND   &kp JP_CARET     &kp SLASH                         &kp JP_PIPE  &kp JP_LBRACE    &kp JP_RBRACE    &kp LESS_THAN  &kp GREATER_THAN
+&kp JP_AT        &kp HASH       &kp JP_ASTERISK    &kp JP_PLUS      &kp JP_EQUAL  &trans      &trans  &kp MINUS    &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_RPAREN  &kp JP_COLON
+&mt EQUAL MINUS  &kp JP_TILDE   &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &trans      &trans  &kp JP_YEN   &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_QUOTE   &kp JP_DQUOTE
+&trans           &kp LESS_THAN  &kp GREATER_THAN   &trans           &trans        &trans      &trans  &trans                                                        &trans
             >;
         };
     };
