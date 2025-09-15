@@ -15,6 +15,31 @@
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
+// OS設定を日本語キーボードのまま使用するための変換定義
+#define JP_DQUOTE       AT                // "
+#define JP_AMPERSAND    CARET             // &
+#define JP_QUOTE        AMPERSAND         // '
+#define JP_EQUAL        UNDER             // =
+#define JP_CARET        EQUAL             // ^
+#define JP_YEN          0x89              // ¥
+#define JP_PLUS         COLON             // +
+#define JP_TILDE        PLUS              // ~
+#define JP_PIPE         LS(0x89)          // |
+#define JP_AT           LEFT_BRACKET      // @
+#define JP_COLON        SINGLE_QUOTE      // :
+#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE    LEFT_BRACE        // `
+#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_LBRACKET     RIGHT_BRACKET     // [
+#define JP_RBRACKET     BACKSLASH         // ]
+#define JP_LPAREN       ASTERISK          // (
+#define JP_RPAREN       LEFT_PARENTHESIS  // )
+#define JP_LBRACE       RIGHT_BRACE       // {
+#define JP_RBRACE       PIPE              // }
+#define JP_KANA         LANGUAGE_1        // かな
+#define JP_EISU         LANGUAGE_2        // 英数
+#define JP_HANZEN       GRAVE             // 半角/全角
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -75,9 +100,9 @@
 
         SYMBOL {
             bindings = <
-&kp PERCENT      &kp DOLLAR     &kp CARET          &kp KP_EQUAL     &kp SLASH                         &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN
-&kp AT_SIGN      &kp HASH       &kp DOUBLE_QUOTES  &kp PLUS         &kp CARET     &trans      &trans  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
-&mt EQUAL MINUS  &kp TILDE      &kp UNDER          &kp EXCLAMATION  &kp QUESTION  &trans      &trans  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&kp PERCENT      &kp DOLLAR     &kp JP_AMPERSAND   &kp JP_CARET     &kp SLASH                         &kp JP_PIPE    &kp JP_LBRACE        &kp JP_RBRACE          &kp LESS_THAN     &kp GREATER_THAN
+&kp JP_AT        &kp HASH       &kp JP_ASTERISK    &kp JP_PLUS      &kp JP_EQUAL  &trans      &trans  &kp MINUS      &kp JP_LPAREN        &kp JP_RPAREN          &kp JP_RPAREN     &kp JP_COLON
+&mt EQUAL MINUS  &kp JP_TILDE   &kp JP_UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &trans      &trans  &kp JP_YEN     &kp JP_LBRACKET      &kp JP_RBRACKET        &kp JP_QUOTE      &kp JP_DQUOTE
 &trans           &kp LESS_THAN  &kp GREATER_THAN   &trans           &trans        &trans      &trans  &trans                                                                        &trans
             >;
         };
