@@ -1,0 +1,13 @@
+
+/ {
+    behaviors {
+        tap-hold {
+            compatible = "zmk,behavior-tap-hold";
+            label = "TAP_HOLD";
+            #binding-cells = <2>;
+            tap-hold-delay-ms = <100>;
+            quick-tap-ms = <100>;
+            hold-trigger-on-release = <false>;
+        };
+    };
+};
